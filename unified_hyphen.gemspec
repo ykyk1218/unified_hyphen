@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["attack_no22001@yahoo.co.jp"]
   spec.summary       = %q{unified hyphen}
   spec.description   = %q{unified hyphen}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/ykyk1218/unified_hyphen"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
