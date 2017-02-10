@@ -6,4 +6,9 @@ class String
     hyphen = "ー|−|―|-|‐|‑|–|—|ｰ"
     self.gsub(/#{hyphen}/, to_hyphen)
   end
+
+  def unify_ja!(to_hyphen="-")
+    hyphen = "ー|−|―|-|‐|‑|–|—|ｰ"
+    self.gsub!(/#{hyphen}/, to_hyphen)
+  end
 end
