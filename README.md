@@ -1,6 +1,16 @@
 # UnifiedHyphen
 
-TODO: Write a gem description
+<a href="https://codeclimate.com/github/ykyk1218/unified_hyphen"><img src="https://codeclimate.com/github/ykyk1218/unified_hyphen/badges/gpa.svg" /></a>
+
+[![Gem Version](https://badge.fury.io/rb/unified_hyphen.svg)](https://badge.fury.io/rb/unified_hyphen)
+
+There are various kinds of Japanese hyphen
+
+
+    ー − ― - ‐ ‑ – — ｰ
+
+It's very confused
+This gem is change unified hyphen from various hyphen
 
 ## Installation
 
@@ -18,8 +28,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    "090ー1111ー1111".unify_ja_hyphen
+    
+or 
 
+    "090ー1111ー1111".unify_ja_hyphen!
+result
+    090-1111-1111
+    
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/unified_hyphen/fork )
