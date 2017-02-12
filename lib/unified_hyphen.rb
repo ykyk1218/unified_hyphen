@@ -2,13 +2,12 @@ require "unified_hyphen/version"
 module UnifiedHyphen
 end
 class String
-  def unify_ja(to_hyphen="-")
-    hyphen = "ー|−|―|-|‐|‑|–|—|ｰ"
-    self.gsub(/#{hyphen}/, to_hyphen)
+  JA_HYPEN_PATTERN = /ー|−|―|-|‐|‑|–|—|ｰ/
+  def unify_ja(dst_string="-")
+    self.gsub(JA_HYPEN_PATTERN, dst_string)
   end
 
-  def unify_ja!(to_hyphen="-")
-    hyphen = "ー|−|―|-|‐|‑|–|—|ｰ"
-    self.gsub!(/#{hyphen}/, to_hyphen)
+  def unify_ja!(dst_string="-")
+    self.gsub!(JA_HYPEN_PATTERN, dst_string)
   end
 end
