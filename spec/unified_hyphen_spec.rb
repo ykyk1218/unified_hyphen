@@ -14,16 +14,16 @@ describe UnifiedHyphen do
   let(:str_org) { "ー:−:―:-:‐:‑:–:—:ｰ" }
   let(:str_fixed) { "-:-:-:-:-:-:-:-:-" }
 
-  include_examples "correct unified hyphen", :unify_ja
-  include_examples "correct unified hyphen", :unify_ja!
+  include_examples "correct unified hyphen", :unify_ja_hyphen
+  include_examples "correct unified hyphen", :unify_ja_hyphen!
 
-  it 'unify_ja is not bang method' do
-    str_org.unify_ja
+  it 'unify_ja_hyphen is not bang method' do
+    str_org.unify_ja_hyphen
     expect(str_org).to eq str_org
   end
 
-  it 'unify_ja! is bang method' do
-    str_org.unify_ja!
+  it 'unify_ja_hyphen! is bang method' do
+    str_org.unify_ja_hyphen!
     expect(str_fixed).to eq str_org
   end
 end
