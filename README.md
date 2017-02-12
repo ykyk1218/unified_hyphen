@@ -9,7 +9,7 @@ There are various kinds of Japanese hyphen
 ー − ― - ‐ ‑ – — ｰ
 ```
 
-It's very confused
+It's very confused  
 This gem is change unified hyphen from various hyphen
 
 ## Installation
